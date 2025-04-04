@@ -7,22 +7,41 @@ namespace SEP_231_System
         static void Main(string[] args)
         {
 
-            if (args.Length == 0)
-            {
-                Console.WriteLine("без арг не запускать");
-                Console.ReadLine();
-                return;
-            }
-            var arg = args[0];
-            if (arg == "null")
-            {
-                var dt = DateTime.Now.AddDays(-1).Date;
-                Console.WriteLine($"{dt}");
-            }
-            else
-                Console.WriteLine($"{arg}");
+            Processed processed = new Processed();
+            processed.OpenChromeProcesses(5);
+            processed.KillProcesses("chrome", 2);
 
-            Console.WriteLine($"{args[1]}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //if (args.Length == 0)
+            //{
+            //    Console.WriteLine("без арг не запускать");
+            //    Console.ReadLine();
+            //    return;
+            //}
+            //var arg = args[0];
+            //if (arg == "null")
+            //{
+            //    var dt = DateTime.Now.AddDays(-1).Date;
+            //    Console.WriteLine($"{dt}");
+            //}
+            //else
+            //    Console.WriteLine($"{arg}");
+
+            //Console.WriteLine($"{args[1]}");
 
 
 
