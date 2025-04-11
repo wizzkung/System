@@ -4,37 +4,19 @@ namespace MyTask
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-
-            //Task[] task = new Task[5];
-            //for (int i = 0; i < task.Length; i++)
-            //{
-            //    task[i] = new Task(Test);
-            //    task[i].Start();
-            //    Console.WriteLine(Task.CurrentId);
-            //}
-
-            ////for(int i = 0; i < task.Length; i++)
-            ////{
-            ////    task[i].Start();
-            ////}
-
-            //Task.WaitAll(task);
-
-
-
-
-            string sourceDir = @"C:\Windows\System32";
-            string destinationDir = @"C:\Windows\System32Copy";
-
             Stopwatch stopwatch = Stopwatch.StartNew();
-            CopyDirectoryAsync(sourceDir, destinationDir).GetAwaiter().GetResult();
+            AsyncAwait.Test();
             stopwatch.Stop();
+            Console.WriteLine($"Синхронный расчет завершен за {stopwatch.Elapsed.TotalSeconds} секунд.");
 
-            Console.WriteLine($"Копирование завершено за {stopwatch.Elapsed.TotalSeconds} секунд.");
+            Stopwatch stopwatch2 = Stopwatch.StartNew();
+            await AsyncAwait.Test2();
+            stopwatch2.Stop();
+            Console.WriteLine($"Асинхронный расчет завершен за {stopwatch2.Elapsed.TotalSeconds} секунд.");
         }
-        
+
         static void Test()
         {
             for (int i = 0; i < 10; i++)
@@ -43,7 +25,6 @@ namespace MyTask
                 Console.WriteLine($"{i} - {Thread.CurrentThread.ManagedThreadId}");
             }
         }
-
 
         static async Task CopyDirectoryAsync(string sourceDir, string destinationDir)
         {
