@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyReflexion", "MyReflexion\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel", "Parallel\Parallel.csproj", "{A0A170A3-B898-43C0-B883-0DF7306D48D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTimer", "MyTimer\MyTimer.csproj", "{A6E99483-9E68-4CC5-A6F2-A393EE8855FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerWPF", "TimerWPF\TimerWPF.csproj", "{7BC00858-6DD4-4DB4-8B69-81AD71198471}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{A0A170A3-B898-43C0-B883-0DF7306D48D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0A170A3-B898-43C0-B883-0DF7306D48D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0A170A3-B898-43C0-B883-0DF7306D48D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6E99483-9E68-4CC5-A6F2-A393EE8855FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6E99483-9E68-4CC5-A6F2-A393EE8855FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6E99483-9E68-4CC5-A6F2-A393EE8855FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6E99483-9E68-4CC5-A6F2-A393EE8855FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BC00858-6DD4-4DB4-8B69-81AD71198471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC00858-6DD4-4DB4-8B69-81AD71198471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC00858-6DD4-4DB4-8B69-81AD71198471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC00858-6DD4-4DB4-8B69-81AD71198471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
